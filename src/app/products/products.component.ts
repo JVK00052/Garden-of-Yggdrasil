@@ -8,7 +8,7 @@ import { Products } from '../products'
 })
 export class ProductsComponent implements OnInit {
 
-  @Input() data: Products[];
+  @Input() products: Products[];
   
   constructor() { }
 
