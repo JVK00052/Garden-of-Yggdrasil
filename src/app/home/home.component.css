@@ -1,0 +1,15 @@
+body {
+    background: url("../../assets/P20180414KB-0285.jpg") no-repeat center;
+    background-size: auto;
+    padding: 3.3em;
+    border: solid white 0.2em;
+    border-radius: 0.4em;
+    box-shadow: 2px 4px 20px rgb(255, 136, 23);
+    margin-top: 6em; 
+    /* height: 100%; */
+}
+
+.font {
+   color: white;
+   text-shadow: black 7px 0px 10px;
+}
