@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { AuthComponent } from './auth/auth.component';
 import { NavComponent } from './nav/nav.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavComponent } from './nav/nav.component';
     ProductsComponent,
     AuthComponent,
     NavComponent,
+    AdminComponent,
     
   ],
   imports: [

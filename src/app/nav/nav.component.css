@@ -1,8 +1,20 @@
 nav {
   text-align: right;
   margin-right: 10px;
+  background-color: rgb(255, 248, 144);
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  width: 100%;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: black !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+  background-color: rgb(168, 255, 172);
 }
