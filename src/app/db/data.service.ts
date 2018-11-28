@@ -26,7 +26,7 @@ private adminUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/auth/login'
   }
 
   getLogin(admin: Admin): Observable<Admin[]> {
-    return this.http.post<Admin[]>(this.adminUrl, admin, httpOptions)
+    return this.http.post<Admin[]>(this.adminUrl, admin)
   }
   delete(id: any): Observable<Products> {
     let url=`https://efa-gardenapp-backend.herokuapp.com/api/product/${id}`
