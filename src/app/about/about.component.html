@@ -1,3 +1,52 @@
-<p>
-  about works!
-</p>
+<body>
+  <div class="aboutus">
+    <h1>About Garden of Yggdrasil</h1>
+    <p>Tyler Shelton began gardening when he was just a wee lad. In fact he was literally born in a garden. His parents
+      could tell it was going to be his calling in
+      life. The first plant he planted was a potato.
+      From then on all he cared about was gardening. Every year his garden, just like his dreams, got a little bit
+      bigger. Then one day he had saved up enough money and
+      decided to buy a garden store and create Garden of Yggdrasil.
+    </p>
+  </div>
+
+  <section id="contact">
+    <div class="container-fluid">
+      <h2 class="text-center text-uppercase">Contact Garden of Yggdrasil</h2>
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <form action="#" method="POST">
+            <div class="control-group">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" id="name" required
+                  data-validation-required-message="Please enter your name" name="name">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" id="email" required
+                  data-validation-required-message="Please enter your email" name="_replyto">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group">
+                <textarea class="form-control" rows="7" placeholder="Your Message" id="message" required
+                  data-validation-required-message="Please leave a message" name="message"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-lg btn-black">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
