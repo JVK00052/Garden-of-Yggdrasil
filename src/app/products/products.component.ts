@@ -19,9 +19,9 @@ export class ProductsComponent implements OnInit {
     this.dataService.getProducts().subscribe(Products => this.products = Products)
   }
 
-  delete(id) {
+  delete(products : Products): void {
     if (localStorage.getItem('token')) {
-      this.dataService.delete(id).subscribe(id => {this.getProducts()})
+      this.dataService.delete(products).subscribe((products: any) => console.log(products))
     } else {
       alert('You are neither Thor, nor Loki, nor Hela. Mortal you have no power here.')
     }
