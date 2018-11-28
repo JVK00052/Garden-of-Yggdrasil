@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { DataService } from './data.service'
-import { Products } from './products';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +7,4 @@ import { Products } from './products';
 })
 export class AppComponent {
   title = 'Garden of Yggdrasil';
-  data: Products[];
-
-  constructor(private dataService: DataService) { }
-
-  ngOnInit() {
-    this.dataService.getProducts()
-    .subscribe((res: Products[]) => {this.data = res})
-  }
 }
