@@ -1,10 +1,8 @@
 body {
     background: url("../../assets/logo2.jpg") no-repeat center;
     background-size: cover;
-    width: 95em;
-    height: 43em;
     opacity: 0.7;
-    background-color: rgba(83, 82, 70, 0.15);
+    height: 54.4em;
     /* padding: 3.3em;
     border: solid white 0.2em;
     border-radius: 0.4em;
@@ -21,7 +19,6 @@ body {
 .text {
     margin-top: -5em;
     margin-left: 70em;
-    background-color: rgba(83, 82, 70, 0.05);
     padding: 2em;
     border-radius: 1em;
 }
