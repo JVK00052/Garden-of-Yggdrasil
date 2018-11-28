@@ -6,28 +6,6 @@ import { DataService } from '../db/data.service';
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
-// export class AdminComponent implements OnInit {
-//   token: '';
-//   login: FormGroup;
-//   private _admin = [];
-
-//   constructor(private fb: FormBuilder, private dataService: DataService) { }
-
-//   ngOnInit() {
-//     this.login = this.fb.group({
-//       email: new FormControl(),
-//       password: new FormControl()
-//     })
-//   }
-
-//     adminLogin(): void {
-//     this._admin.push(this.login)
-//     this.dataService.getLogin(this._admin[0].value).subscribe(
-//       Admin => localStorage.setItem('token', Admin[0].token )
-      
-//     )
-//   }
-// }
 export class AdminComponent implements OnInit {
   token = ""
   login: FormGroup

@@ -15,18 +15,16 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
     this.getProducts();
   }
-  getProducts() : void {
+  getProducts(): void {
     this.dataService.getProducts().subscribe(Products => this.products = Products)
   }
 
-  delete(id){
-    if (localStorage.getItem('token')){
-      this.dataService.delete(id).subscribe(
-        id => this.getProducts()
-      )
+  delete(id) {
+    if (localStorage.getItem('token')) {
+      this.dataService.delete(id).subscribe(id => {this.getProducts()})
     } else {
       alert('You are neither Thor, nor Loki, nor Hela. Mortal you have no power here.')
     }
   }
-  
+
 }

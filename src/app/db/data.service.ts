@@ -6,7 +6,7 @@ import { Products } from '../models/product'
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
   })
 }
 
@@ -14,7 +14,6 @@ const httpOptions = {
   providedIn: 'root'  
 })
 export class DataService {
-  
 private productUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/product'
 private adminUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/auth/login'
 
@@ -27,9 +26,9 @@ private adminUrl = 'https://efa-gardenapp-backend.herokuapp.com/api/auth/login'
   getLogin(admin: Admin): Observable<Admin[]> {
     return this.http.post<Admin[]>(this.adminUrl, admin, httpOptions)
   }
-  delete(id) {
+  delete(id): Observable<Products> {
     let url=`https://efa-gardenapp-backend.herokuapp.com/api/product/${id}`
-    return this.http.delete(url)  
+    return this.http.delete<Products>(url,)  
   }
 }
 
