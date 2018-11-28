@@ -23,7 +23,7 @@ export class ProductsComponent implements OnInit {
     if (localStorage.getItem('token')) {
       this.dataService.delete(products).subscribe((products: any) => console.log(products))
     } else {
-      alert('You are neither Thor, nor Loki, nor Hela. Mortal you have no power here.')
+      alert('You are neither Thor, nor Loki, nor Hela, nor the All-Father Tyler. Mortal you have no power here.')
     }
   }
 
