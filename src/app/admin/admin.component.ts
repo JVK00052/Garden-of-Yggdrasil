@@ -36,9 +36,9 @@ export class AdminComponent implements OnInit {
   constructor(private _fb: FormBuilder, private _login: DataService, private router: Router) {
   }
 
-  public onAdminClick() {
-    this.router.navigate(['/'])
-  }
+  // public onAdminClick() {
+  //   this.router.navigate(['/'])
+  // }
 
   ngOnInit() {
     this.login = this._fb.group({
@@ -50,6 +50,8 @@ export class AdminComponent implements OnInit {
   adminLogin() {
     if (this.login.invalid) {
       return;
+  } else {
+    this.router.navigate(['/'])
   }
   this._login.getLogin(this.login.value).subscribe((res: any) => {this.token = res.token; localStorage.setItem("token", this.token)})
   }

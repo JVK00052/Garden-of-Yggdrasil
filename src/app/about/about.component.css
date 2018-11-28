@@ -1,23 +1,16 @@
 .aboutus {
   text-align: center;
-  margin-left: 30em;
-  margin-right: 30em;
-  background-color: rgba(102, 102, 102, 0.4);
-  border-radius: 0.8em;
-<<<<<<< HEAD
+  margin: 0 30em 25em 30em;
   font-family: 'Poiret One', cursive;
   font-size: 10px;
-  color: white;
-  text-shadow: 1px 0px 11px;
-  padding: 1em;
+  text-shadow: 1px 0px 11px black;
 }
 
 body {
   background: url("../../assets/spring-in-garden.jpg") no-repeat center;
   background-size: cover;
-  width: 96em;
-  height: 42.75em;
+  height: 54.4em;
+  font-family: 'Poiret One', cursive;
+  text-shadow: 3px 0px 11px black;
+  color: white;
 }
-=======
-}
->>>>>>> 47030d59ebcf82efa120c879cba9e86448853e69
