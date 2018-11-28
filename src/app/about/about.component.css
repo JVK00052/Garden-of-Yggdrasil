@@ -1,0 +1,16 @@
+.aboutus {
+  text-align: center;
+  margin: 0 30em 25em 30em;
+  font-family: 'Poiret One', cursive;
+  font-size: 10px;
+  text-shadow: 1px 0px 11px black;
+}
+
+body {
+  background: url("../../assets/spring-in-garden.jpg") no-repeat center;
+  background-size: cover;
+  height: 54.4em;
+  font-family: 'Poiret One', cursive;
+  text-shadow: 3px 0px 11px black;
+  color: white;
+}
